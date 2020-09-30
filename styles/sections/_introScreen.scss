@@ -8,9 +8,10 @@
   opacity: 0;
   @supports (background-blend-mode: soft-light) {
     background: $bg-primary url("../../assets/intro-bg.svg") no-repeat 50% 50%;
+    // background-image: url("../../assets/intro-bg.svg"),
+    //   radial-gradient($clr-light, $clr-dark);
     background-size: contain;
     background-blend-mode: soft-light;
-    // background-attachment: fixed;
   }
 }
 
@@ -39,9 +40,8 @@
 .intro .heading-intro h1 {
   transform: translate(100vw, 0);
   animation: 1s header-intro 1.8s forwards;
-  color: $bg-primary;
-  // text-shadow: 2px 2px #666;
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.199);
+  color: $clr-light;
+  text-shadow: -5px 5px 5px rgb(0, 0, 0);
 }
 /* Heading Intro */
 
@@ -50,16 +50,18 @@
 .intro h2 {
   transform: translate(0, 100vh);
   animation: 1s other-intro 2.2s forwards ease-in;
-  color: $bg-primary;
+  color: $clr-light;
   font-weight: 600;
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.199);
+  text-shadow: -5px 5px 5px rgb(0, 0, 0);
 }
 .intro h2 {
   text-align: right;
 }
 .intro .highlight {
-  color: $clr-light;
-  // opacity: 0.7;
-  text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
+  color: $clr-dark;
+  text-shadow: none;
+  padding: 0 0.5rem;
+  font-weight: 900;
+  background: $clr-light;
 }
 /* Other Intros */

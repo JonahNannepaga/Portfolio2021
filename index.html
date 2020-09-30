@@ -16,9 +16,25 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="" href="#introduction"
+              ><span class="hover-text">Introduction</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#skills"><span class="hover-text">Skills</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><span class="hover-text">Others</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="intro">
+      <section class="intro" id="introduction">
         <div class="heading-intro">
           <h1>Hi there!</h1>
         </div>
@@ -27,7 +43,7 @@
         <!-- <h2>~ Jonah</h2> -->
       </section>
 
-      <section class="skillset">
+      <section class="skillset" id="skills">
         <div class="skillset__text">
           <h2>Skills & Experience</h2>
           <p>
@@ -233,3 +249,5 @@
     <!-- <script src="./dist/bundle.js"></script> -->
   </body>
 </html>
+/* Nav Bar */ const navBar = document.querySelector('nav');
+navBar.addEventListener('mousemove',(e)=>{ }); /* Nav Bar */

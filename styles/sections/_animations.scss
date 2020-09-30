@@ -59,6 +59,19 @@
 }
 /* Other Intros */
 
+/* Navigation Side bar Animations */
+@keyframes nav-intro {
+  0% {
+    transform: translate(0, -100vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+/* Navigation Side bar Animations */
+
 /* Variable font-animate */
 @keyframes font-animate {
   from {
