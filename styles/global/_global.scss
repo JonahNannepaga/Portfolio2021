@@ -1,0 +1,58 @@
+/* ------ Scroll Bar ------ */
+html {
+  scrollbar-color: $clr-light white;
+  scrollbar-width: thin;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: $clr-dark;
+  // border-left: 1px solid $clr-primary-200;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f65252;
+  background: $clr-light;
+  border-radius: 100vw;
+}
+/* ------ Scroll Bar ------ */
+
+/* ------- Global CTA button ------ */
+.global-btn {
+  color: $clr-light;
+  font-family: $ff-heading;
+  font-weight: $fw-bold;
+  background: $clr-dark;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em 3em;
+  margin: 3em;
+  position: relative;
+  z-index: 1;
+
+  & span {
+    display: grid;
+    place-items: center;
+    background: $clr-light;
+    color: $clr-dark;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clip-path: circle(0 at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 100ms ease-out;
+    // mix-blend-mode: difference;
+  }
+
+  &:hover span {
+    clip-path: circle(10% at var(--x, 50%) var(--y, 50%));
+  }
+
+  &:focus span,
+  &:active span {
+    clip-path: circle(100% at var(--x, 50%) var(--y, 50%));
+  }
+}
+/* ------- Global CTA button ------ */

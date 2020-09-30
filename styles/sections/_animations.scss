@@ -1,0 +1,73 @@
+/* Intro */
+@keyframes intro {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    opacity: 0;
+  }
+  20% {
+    clip-path: polygon(45% 45%, 55% 45%, 55% 55%, 45% 55%);
+    opacity: 1;
+  }
+  40% {
+    clip-path: polygon(45% 45%, 55% 45%, 55% 55%, 45% 55%);
+    transform: rotate(2turn);
+    opacity: 1;
+  }
+  50% {
+    clip-path: polygon(47% 47%, 53% 47%, 53% 53%, 47% 53%);
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transform: rotate(2turn);
+    opacity: 1;
+  }
+}
+
+/* Heading Intro  */
+@keyframes header-intro {
+  0% {
+    transform: translate(100vw, 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  62% {
+    transform: translate(0, 0) rotate(8deg);
+    margin-left: 0;
+  }
+  74% {
+    transform: translate(0, -2%) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0);
+    z-index: 10;
+  }
+}
+/* Heading Intro */
+
+/* Other Intros */
+@keyframes other-intro {
+  0% {
+    transform: translate(0, 100vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+/* Other Intros */
+
+/* Variable font-animate */
+@keyframes font-animate {
+  from {
+    // font-weight: 900;
+    font-variation-settings: "wght" 900, "wdth" 100;
+  }
+  to {
+    // font-weight: 400;
+    font-variation-settings: "wght" 400, "wdth" 100;
+  }
+}
+/* Variable font-animate */
