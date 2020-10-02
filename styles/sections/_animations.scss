@@ -28,6 +28,7 @@
 @keyframes header-intro {
   0% {
     transform: translate(100vw, 0);
+    opacity: 0;
   }
   60% {
     transform: translate(0, 0);
@@ -35,13 +36,16 @@
   62% {
     transform: translate(0, 0) rotate(8deg);
     margin-left: 0;
+    opacity: 0.4;
   }
   74% {
     transform: translate(0, -2%) rotate(-2deg);
+    opacity: 0.8;
   }
   100% {
     transform: translate(0, 0);
     z-index: 10;
+    opacity: 1;
   }
 }
 /* Heading Intro */
@@ -52,9 +56,12 @@
     transform: translate(0, 100vh);
     opacity: 0;
   }
+  90% {
+    opacity: 0.4;
+  }
   100% {
-    opacity: 1;
     transform: translate(0, 0);
+    opacity: 1;
   }
 }
 /* Other Intros */

@@ -1,0 +1,52 @@
+.projects-section {
+  padding: 0 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @supports (background-blend-mode: overlay) {
+    background: $bg-primary url('../../assets/projects-bg.svg') no-repeat 50%
+      50%;
+    background-size: contain;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+  }
+  &__header {
+    h2 {
+      text-transform: uppercase;
+      font-family: $ff-heading;
+      font-size: 5rem;
+      margin: 0 0 0.25em;
+      letter-spacing: 0.1rem;
+      animation: 1.25s ease-in-out font-animate infinite alternate;
+    }
+    p {
+      text-align: right;
+      color: $clr-light;
+      font-size: 1.25rem;
+      font-family: $ff-body;
+      margin: 0 0 1em;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    z-index: 0;
+    .project-item {
+      cursor: pointer;
+      z-index: 5;
+      img {
+        z-index: 7;
+        filter: grayscale(100%);
+        transition: filter, transform 250ms ease-in-out;
+        &:hover {
+          filter: grayscale(0%);
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
