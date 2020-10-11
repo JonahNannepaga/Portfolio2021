@@ -88,11 +88,12 @@ select {
 ::selection {
   color: $clr-dark;
   background: $clr-light;
+  text-shadow: none;
 }
 
 html {
   font-size: 1rem;
-  //   font-size: clamp(1rem, 5vw, 1.5rem);
+  // font-size: clamp(0.75rem, 5vw, 1rem);
   //   scroll-padding-top: 7rem;
   overflow-x: hidden;
 }

@@ -8,8 +8,10 @@
   opacity: 0;
   @supports (background-blend-mode: soft-light) {
     background: $bg-primary url('../../assets/intro-bg.svg') no-repeat 50% 50%;
-    // background-image: url("../../assets/intro-bg.svg"),
+    // background-image: url('../../assets/intro-bg.svg'),
     //   radial-gradient($clr-light, $clr-dark);
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
     background-size: contain;
     background-blend-mode: soft-light;
   }
@@ -47,7 +49,8 @@
 
 /* Other Intros */
 .intro h3,
-.intro h2 {
+.intro h2,
+.intro .global-btn {
   transform: translate(0, 100vh);
   animation: 1s other-intro 2.5s forwards ease-in-out;
   color: $clr-light;
@@ -65,3 +68,13 @@
   background: $clr-light;
 }
 /* Other Intros */
+
+.intro .global-btn {
+  margin: 1.5em 0 0 0;
+  text-transform: capitalize;
+  text-shadow: none;
+}
+
+.intro .global-btn {
+  animation-delay: 3s;
+}

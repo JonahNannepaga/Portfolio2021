@@ -105,11 +105,13 @@ select {
 ::-moz-selection {
   color: #000;
   background: #fff;
+  text-shadow: none;
 }
 
 ::selection {
   color: #000;
   background: #fff;
+  text-shadow: none;
 }
 
 html {
@@ -163,10 +165,6 @@ html {
   right: 0;
   -webkit-clip-path: circle(0 at var(--x, 50%) var(--y, 50%));
           clip-path: circle(0 at var(--x, 50%) var(--y, 50%));
-  -webkit-transition: -webkit-clip-path 100ms ease-out;
-  transition: -webkit-clip-path 100ms ease-out;
-  transition: clip-path 100ms ease-out;
-  transition: clip-path 100ms ease-out, -webkit-clip-path 100ms ease-out;
 }
 
 .global-btn:hover span {
@@ -504,7 +502,8 @@ h2 {
 /* Heading Intro */
 /* Other Intros */
 .intro h3,
-.intro h2 {
+.intro h2,
+.intro .global-btn {
   -webkit-transform: translate(0, 100vh);
           transform: translate(0, 100vh);
   -webkit-animation: 1s other-intro 2.5s forwards ease-in-out;
@@ -527,6 +526,17 @@ h2 {
 }
 
 /* Other Intros */
+.intro .global-btn {
+  margin: 1.5em 0 0 0;
+  text-transform: capitalize;
+  text-shadow: none;
+}
+
+.intro .global-btn {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .skillset {
   background-color: #0b0c10;
   display: -ms-grid;
