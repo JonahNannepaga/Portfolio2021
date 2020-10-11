@@ -608,6 +608,10 @@ h2 {
   }
 }
 
+.projects-section__header {
+  margin-bottom: 3em;
+}
+
 .projects-section__header h2 {
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
@@ -629,31 +633,63 @@ h2 {
 .projects-section__wrapper {
   display: -ms-grid;
   display: grid;
-  padding: 0 10%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  z-index: 0;
+  padding: 0 5%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
 }
 
 .projects-section__wrapper .project-item {
   cursor: pointer;
-  z-index: 5;
-}
-
-.projects-section__wrapper .project-item img {
-  z-index: 7;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   -webkit-transition: -webkit-filter, -webkit-transform 250ms ease-in-out;
   transition: -webkit-filter, -webkit-transform 250ms ease-in-out;
   transition: filter, transform 250ms ease-in-out;
   transition: filter, transform 250ms ease-in-out, -webkit-filter, -webkit-transform 250ms ease-in-out;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.projects-section__wrapper .project-item img:hover {
+.projects-section__wrapper .project-item:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  z-index: 1;
+}
+
+.about-section {
+  padding: 0 10%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (background-blend-mode: overlay) {
+  .about-section {
+    background: #0b0c10 url("../../assets/undraw_map_1r69.svg") no-repeat 50% 50%;
+    background-size: contain;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+  }
+}
+
+.about-section h2 {
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  margin: 0 0 0.25em;
+  letter-spacing: 0.1rem;
+  -webkit-animation: 1.25s ease-in-out font-animate infinite alternate;
+          animation: 1.25s ease-in-out font-animate infinite alternate;
 }
