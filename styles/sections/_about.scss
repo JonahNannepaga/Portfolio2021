@@ -6,8 +6,7 @@
   justify-content: center;
   align-items: center;
   @supports (background-blend-mode: overlay) {
-    background: $bg-primary url('../../assets/undraw_map_1r69.svg') no-repeat
-      50% 50%;
+    background: $bg-primary url('../../assets/about-bg.svg') no-repeat 50% 50%;
     background-size: contain;
     background-blend-mode: overlay;
     background-attachment: fixed;

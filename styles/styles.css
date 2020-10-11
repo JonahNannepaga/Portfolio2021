@@ -677,7 +677,7 @@ h2 {
 
 @supports (background-blend-mode: overlay) {
   .about-section {
-    background: #0b0c10 url("../../assets/undraw_map_1r69.svg") no-repeat 50% 50%;
+    background: #0b0c10 url("../../assets/about-bg.svg") no-repeat 50% 50%;
     background-size: contain;
     background-blend-mode: overlay;
     background-attachment: fixed;
