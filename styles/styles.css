@@ -178,8 +178,8 @@ html {
 }
 
 .global-btn:hover span {
-  -webkit-clip-path: circle(10% at var(--x, 50%) var(--y, 50%));
-          clip-path: circle(10% at var(--x, 50%) var(--y, 50%));
+  -webkit-clip-path: circle(15% at var(--x, 50%) var(--y, 50%));
+          clip-path: circle(15% at var(--x, 50%) var(--y, 50%));
 }
 
 .global-btn:focus span,
