@@ -97,3 +97,10 @@ html {
   //   scroll-padding-top: 7rem;
   overflow-x: hidden;
 }
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none;
+}

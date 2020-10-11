@@ -33,6 +33,9 @@
           <li class="nav-item">
             <a href="#about-me"><span class="hover-text">About</span></a>
           </li>
+          <li class="nav-item">
+            <a href="#contact"><span class="hover-text">Contact</span></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -45,7 +48,7 @@
         <h3>I am a <span class="highlight">front end web developer</span></h3>
         <!-- <h2>~ Jonah</h2> -->
         <a href="#about-me" class="global-btn"
-          >more about me<span aria-hidden="true">more about me</span></a
+          >about me...<span aria-hidden="true">about me...</span></a
         >
       </section>
 
@@ -317,6 +320,44 @@
         </div>
 
         <!-- <img src="./assets/github-profile.jpg" alt="my image" /> -->
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-section__header">
+          <h2>Contact</h2>
+          <p>Let's connect and make web better</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <fieldset>
+              <legend>Contact Form</legend>
+              <div class="contact-form__container">
+                  <input type="text" name="name" id="name-field" class="contact-form__input" autocomplete="no"
+                      placeholder=" " aria-label="Name" />
+                  <label for="name-field" class="contact-form__label">
+                      <span class="contact-form__content">Name</span>
+                  </label>
+              </div>
+              <div class="contact-form__container">
+                  <input type="email" name="email" id="email-field" placeholder=" " aria-label="Email" autocomplete="no" />
+                  <label for="email-field" class="contact-form__label">
+                      <span class="contact-form__content">Email</span>
+                  </label>
+              </div>
+              <div class="contact-form__container">
+                  <input type="tel" name="tel" id="phone-field" placeholder=" " aria-label="Phone" autocomplete="no"/>
+                  <label for="phone-field" class="contact-form__label">
+                      <span class="contact-form__content">Phone</span>
+                  </label>
+              </div>
+              <p class="contact-form__text">Type your message here below and send me:</p>
+              <div class="contact-form__container">
+                  <textarea placeholder="Message" name='message'></textarea>
+              </div>
+              <div class="contact-form__container contact-form__submit">
+                  <button type="submit" class="global-btn">Send<span aria-hidden="true">Send</span></button>
+              </div>
+          </fieldset>
+      </form>
       </section>
     </main>
 

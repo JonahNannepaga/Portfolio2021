@@ -20,7 +20,9 @@ html {
 
 /* ------- Global CTA button ------ */
 .global-btn {
+  border: none;
   color: $clr-light;
+  cursor: pointer;
   font-family: $ff-heading;
   font-weight: $fw-bold;
   background: $clr-dark;

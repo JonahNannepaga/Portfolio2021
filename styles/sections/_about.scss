@@ -12,11 +12,12 @@
     background-attachment: fixed;
   }
   h2 {
-    text-transform: uppercase;
-    font-family: $ff-heading;
-    font-size: 5rem;
-    margin: 0 0 0.25em;
-    letter-spacing: 0.1rem;
-    animation: 1.25s ease-in-out font-animate infinite alternate;
+    // text-transform: uppercase;
+    // font-family: $ff-heading;
+    // font-size: 5rem;
+    // margin: 0 0 0.25em;
+    // letter-spacing: 0.1rem;
+    // animation: 1.25s ease-in-out font-animate infinite alternate;
+    @include heading-mixin;
   }
 }

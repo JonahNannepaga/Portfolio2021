@@ -1,5 +1,6 @@
 @import './base/variables';
 @import './base/reset';
+@import './base/mixins';
 @import './global/global';
 @import './global/typography';
 
@@ -9,3 +10,4 @@
 @import './sections/skills';
 @import './sections/projects';
 @import './sections/about';
+@import './sections/contact';
