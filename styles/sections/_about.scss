@@ -20,4 +20,12 @@
     // animation: 1.25s ease-in-out font-animate infinite alternate;
     @include heading-mixin;
   }
+
+  &__photo {
+    clip-path: circle(50%);
+    img {
+      max-height: 20vh;
+      transform: scale(1.6) translateY(15%) translateX(3%);
+    }
+  }
 }

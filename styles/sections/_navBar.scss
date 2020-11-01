@@ -35,3 +35,25 @@
   }
 }
 /* Side Navigation */
+
+/* Social Media Navigation */
+.social-media {
+  position: fixed;
+  top: 50%;
+  font-size: 1.75em;
+  transform: translateY(-50%);
+  right: 2rem;
+  z-index: 12;
+  transform: translate(0, -100vh);
+  animation: 1s nav-intro 1.2s forwards ease-in;
+  display: flex;
+  flex-direction: column;
+  i {
+    margin-bottom: 0.5rem;
+    color: $nav-item;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $clr-light;
+    }
+  }
+}

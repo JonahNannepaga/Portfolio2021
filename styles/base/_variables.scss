@@ -1,6 +1,7 @@
-/*------------
-    Fonts
--------------*/
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
+
 @font-face {
   font-family: 'Orbitron';
   src: url('/fonts/Orbitron-VariableFont_wght.ttf');
@@ -10,9 +11,11 @@ $ff-body: 'PT Sans', sans-serif;
 $ff-heading: 'Orbitron', sans-serif;
 $fw-normal: 400;
 $fw-bold: 700;
-/*------------
-    Colors
--------------*/
+
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+
 $clr-primary-100: #91e5f6;
 $clr-primary-200: #84d2f6;
 $clr-primary-300: #59a5d8;
@@ -24,12 +27,11 @@ $clr-dark: #000;
 $nav-item: #393d4d;
 $bg-primary: #0b0c10;
 $border-line: #3f3d56;
-/*------------
-    Gradients
--------------*/
-// $clr-gradient: linear-gradient(-225deg, $clr-primary-200, $clr-primary-300);
 
-//temp
+/* -------------------------------------------------------------------------- */
+/*                                  Gradients                                 */
+/* -------------------------------------------------------------------------- */
+// $clr-gradient: linear-gradient(-225deg, $clr-primary-200, $clr-primary-300);
 
 $white: #ffffff;
 $black: #000000;
