@@ -48,8 +48,9 @@
   animation: 1s nav-intro 1.2s forwards ease-in;
   display: flex;
   flex-direction: column;
+  align-items: center;
   i {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: $nav-item;
     transition: color 0.2s ease-in-out;
     &:hover {

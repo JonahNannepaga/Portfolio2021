@@ -43,11 +43,23 @@
       cursor: pointer;
       transition: filter, transform 250ms ease-in-out;
       filter: grayscale(100%);
-
+      position: relative;
       &:hover {
         filter: grayscale(0%);
         transform: scale(1.5);
         z-index: 1;
+        i {
+          opacity: 0;
+        }
+      }
+      i {
+        position: absolute;
+        font-size: 5rem;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+        opacity: 1;
+        // transition: opacity 0.1s ease-in-out;
       }
     }
   }
